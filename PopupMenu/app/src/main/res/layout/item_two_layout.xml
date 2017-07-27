@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#f2f0f0"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textSize="25sp"
+        android:textColor="#000"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_recycler"
+        app:layout_constraintLeft_toLeftOf="@+id/horizontal_recycler" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/horizontal_recycler"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        android:layout_marginBottom="0dp" />
+
+</android.support.constraint.ConstraintLayout>
